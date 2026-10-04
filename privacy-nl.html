@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abysse — Privacybeleid</title>
+<meta name="description" content="Privacybeleid van de mobiele game Abysse (Pouglin, België): geen account, geen server, Google AdMob-advertenties die alleen met je toestemming gepersonaliseerd zijn, aankopen via de stores, je rechten per land.">
+<link rel="alternate" hreflang="en" href="https://pouglin.github.io/abysse/privacy">
+<link rel="alternate" hreflang="fr" href="https://pouglin.github.io/abysse/privacy-fr">
+<link rel="alternate" hreflang="es" href="https://pouglin.github.io/abysse/privacy-es">
+<link rel="alternate" hreflang="de" href="https://pouglin.github.io/abysse/privacy-de">
+<link rel="alternate" hreflang="it" href="https://pouglin.github.io/abysse/privacy-it">
+<link rel="alternate" hreflang="pt" href="https://pouglin.github.io/abysse/privacy-pt">
+<link rel="alternate" hreflang="nl" href="https://pouglin.github.io/abysse/privacy-nl">
+<link rel="alternate" hreflang="ru" href="https://pouglin.github.io/abysse/privacy-ru">
+<link rel="alternate" hreflang="ja" href="https://pouglin.github.io/abysse/privacy-ja">
+<link rel="alternate" hreflang="ko" href="https://pouglin.github.io/abysse/privacy-ko">
+<link rel="alternate" hreflang="zh-Hans" href="https://pouglin.github.io/abysse/privacy-zh">
+<link rel="alternate" hreflang="x-default" href="https://pouglin.github.io/abysse/privacy">
+<!-- Adresse de contact pouglin@gmail.com : 2 occurrences par page (barre du haut, § 1), sur les 11 pages privacy*.html
+     + index.html. Ailleurs, le texte renvoie au § 1. Version anglaise (privacy.html) = version de référence. -->
+<style>
+:root{color-scheme:light dark;--bg:#f6f9fb;--fg:#14232e;--muted:#4a5d6b;--accent:#0b3d5c;--link:#0b6fa4;--line:#cfdbe4;--box:#e8f1f7}
+@media (prefers-color-scheme:dark){:root{--bg:#07141d;--fg:#e3eef5;--muted:#a9bccb;--accent:#7cf4ff;--link:#7cd3ff;--line:#1f3646;--box:#0e2230}}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px 48px;line-height:1.6;color:var(--fg);background:var(--bg);font-size:1rem}
+h1{font-size:1.6rem;margin:2rem 0 .3rem;color:var(--accent)}
+h2{font-size:1.12rem;margin:1.8rem 0 .4rem;color:var(--accent);scroll-margin-top:12px}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+p,li,td{overflow-wrap:anywhere}
+ul{padding-left:1.2rem}li{margin:.3rem 0}
+a{color:var(--link)}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;color:var(--muted);font-size:.95rem}
+.lang{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.lang label{color:var(--muted)}
+.lang select{min-height:44px;min-width:44px;padding:.4rem .7rem;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--muted);border-radius:10px;cursor:pointer}
+.lang select:focus-visible,a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.langlist{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0 .9rem}
+.langlist li{margin:0}
+.langlist a{display:inline-block;min-height:44px;line-height:44px}
+.date{color:var(--muted)}
+.short{background:var(--box);border-radius:10px;padding:.8rem 1rem}
+.short ul{margin:.4rem 0 0}
+.toc{border:1px solid var(--line);border-radius:10px;padding:.4rem 1rem}
+.toc ol{margin:.2rem 0;padding-left:1.4rem;columns:2 16rem;column-gap:1.5rem}
+.toc li{margin:0;break-inside:avoid}
+.toc a,.links a{display:inline-block;min-height:44px;line-height:44px}
+.links{list-style:none;padding:0}
+.contact{background:var(--box);border-radius:10px;padding:.6rem 1rem}
+.contact a{display:inline-block;min-height:44px;line-height:44px;font-weight:600}
+.note{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--box)}
+caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
+@media (max-width:640px){
+ table,thead,tbody,tr,th,td{display:block}
+ thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ tr{border:1px solid var(--line);border-radius:10px;margin:0 0 .8rem;padding:.3rem 0;background:var(--bg)}
+ td{border:0;padding:.3rem .8rem}
+ td::before{content:attr(data-label);display:block;font-weight:700;color:var(--accent);font-size:.85rem}
+}
+</style>
+<noscript><style>.lang{display:none}</style></noscript>
+</head>
+<body>
+<header class="top">
+  <span><strong>Abysse</strong> · Pouglin · <a href="mailto:pouglin@gmail.com">pouglin@gmail.com</a></span>
+  <div class="lang">
+    <label for="lang">Taal</label>
+    <select id="lang" onchange="if(this.value)location.href=this.value">
+      <option value="privacy.html" lang="en">English</option>
+      <option value="privacy-fr.html" lang="fr">Français</option>
+      <option value="privacy-es.html" lang="es">Español</option>
+      <option value="privacy-de.html" lang="de">Deutsch</option>
+      <option value="privacy-it.html" lang="it">Italiano</option>
+      <option value="privacy-pt.html" lang="pt">Português</option>
+      <option value="privacy-nl.html" lang="nl" selected>Nederlands</option>
+      <option value="privacy-ru.html" lang="ru">Русский</option>
+      <option value="privacy-ja.html" lang="ja">日本語</option>
+      <option value="privacy-ko.html" lang="ko">한국어</option>
+      <option value="privacy-zh.html" lang="zh-Hans">简体中文</option>
+    </select>
+  </div>
+  <noscript><nav aria-label="Talen"><ul class="langlist">
+    <li><a href="privacy.html" hreflang="en" lang="en">English</a></li>
+    <li><a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a></li>
+    <li><a href="privacy-es.html" hreflang="es" lang="es">Español</a></li>
+    <li><a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a></li>
+    <li><a href="privacy-it.html" hreflang="it" lang="it">Italiano</a></li>
+    <li><a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a></li>
+    <li><a href="privacy-nl.html" hreflang="nl" lang="nl" aria-current="page">Nederlands</a></li>
+    <li><a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a></li>
+    <li><a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a></li>
+    <li><a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a></li>
+    <li><a href="privacy-zh.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+  </ul></nav></noscript>
+</header>
+
+<main>
+<h1>Privacybeleid</h1>
+<p class="date"><strong>Laatst bijgewerkt: 4 oktober 2026</strong></p>
+
+<div class="short">
+<p><strong>In het kort</strong></p>
+<ul>
+<li><strong>Geen account, geen server</strong>: je voortgang blijft op je toestel. Wij ontvangen niets, tenzij je ons schrijft.</li>
+<li>De gratis versie toont <strong>advertenties van Google AdMob</strong>. Google verwerkt daarbij technische gegevens (advertentie-ID, IP-adres, interacties met advertenties). Advertenties zijn <strong>alleen gepersonaliseerd als je daarmee instemt</strong>, en je kunt op elk moment van gedachten veranderen (<em>Instellingen → Privacy</em>).</li>
+<li><strong>Aankopen</strong> verlopen via Google Play (of de App Store): wij zien geen betalingsgegevens.</li>
+<li>Je kunt <strong>alles zelf wissen</strong> (<a href="#nl-11">§ 11</a>) en je rechten per e-mail uitoefenen (<a href="#nl-12">§ 12</a> en <a href="#nl-13">§ 13</a>).</li>
+</ul>
+</div>
+
+<nav class="toc" aria-label="Inhoud">
+<ol>
+<li><a href="#nl-1">Wie is verantwoordelijk</a></li>
+<li><a href="#nl-2">Gegevens op je toestel</a></li>
+<li><a href="#nl-3">Advertenties (Google AdMob)</a></li>
+<li><a href="#nl-4">In-app-aankopen</a></li>
+<li><a href="#nl-5">Ons schrijven, beoordelen</a></li>
+<li><a href="#nl-6">Overzichtstabel</a></li>
+<li><a href="#nl-7">Rechtsgronden, weigeren</a></li>
+<li><a href="#nl-8">Bewaartermijnen</a></li>
+<li><a href="#nl-9">Ontvangers, doorgiften</a></li>
+<li><a href="#nl-10">Beveiliging</a></li>
+<li><a href="#nl-11">Je gegevens verwijderen</a></li>
+<li><a href="#nl-12">Je rechten</a></li>
+<li><a href="#nl-13">Rechten per land</a></li>
+<li><a href="#nl-14">Leeftijd</a></li>
+<li><a href="#nl-15">Wijzigingen</a></li>
+</ol>
+</nav>
+
+<h2 id="nl-1">1. Wie is verantwoordelijk</h2>
+<p>Abysse is een mobiele game uitgegeven door <strong>Pouglin</strong>, een onafhankelijke ontwikkelaar (natuurlijke persoon) gevestigd in <strong>België</strong> — „wij” in deze tekst. Wij zijn de <strong>verwerkingsverantwoordelijke</strong> voor wat van ons afhangt: de game zelf en de e-mails die je ons stuurt.</p>
+<p class="contact">Contact voor elke vraag of elk verzoek over je gegevens:<br><a href="mailto:pouglin@gmail.com">pouglin@gmail.com</a></p>
+<ul>
+<li><strong>Volledige contactgegevens van de uitgever</strong>: zie de pagina van de game op Google Play („Over de ontwikkelaar” / „App-ondersteuning”) of in de App Store.</li>
+<li>Gezien onze omvang hebben we geen functionaris voor gegevensbescherming aangesteld: we behandelen verzoeken zelf. We zijn ook de persoon die verantwoordelijk is voor de bescherming van persoonlijke inlichtingen (Quebec) en de privacyverantwoordelijke in de zin van de andere wetten vermeld in <a href="#nl-13">§ 13</a>.</li>
+<li><strong>Google</strong> (Google Ireland Limited in Europa, Google LLC in de Verenigde Staten) is <strong>zelfstandig verwerkingsverantwoordelijke</strong> voor zijn eigen verwerkingen: advertenties (AdMob), betalingen (Google Play), Android-back-up, Google Play-recensies. Op iPhone en iPad is <strong>Apple</strong> dat voor de App Store, betalingen en iCloud. Op die verwerkingen is hun eigen beleid van toepassing.</li>
+</ul>
+
+<h2 id="nl-2">2. Wat de game op je toestel opslaat</h2>
+<ul>
+<li>Je voortgang (parels, winkel, dieptes, skins, prestaties, aquarium), je instellingen (taal, geluid, weergave, advertentiekeuze), de status van je aankopen en je <strong>5 profielen</strong> (met de namen die je ze geeft) worden <strong>alleen op je toestel</strong> opgeslagen, in de privé-opslag van de app.</li>
+<li>Wij hebben <strong>geen server</strong> en ontvangen hiervan niets. De game vraagt geen account, naam, e-mailadres, locatie, contacten, foto's, microfoon of camera.</li>
+<li><strong>Exporteren / importeren</strong>: in <em>Instellingen → Gegevens</em> kun je een opslagcode naar het klembord kopiëren en elders weer plakken. Die code bevat de voortgang van het profiel en de naam ervan; ze is niet versleuteld en verlaat je toestel alleen als je haar zelf plakt of verstuurt. Publiceer haar niet als de profielnaam jou identificeert.</li>
+<li><strong>Back-up van het toestel</strong>: als Google-back-up op je Android-telefoon is ingeschakeld, kan Android de gamegegevens <strong>versleuteld</strong> naar je Google-account kopiëren en ze op een nieuw toestel terugzetten. Op iPhone/iPad kunnen de gamegegevens op dezelfde manier worden opgenomen als iCloud-reservekopie van het toestel is ingeschakeld. Deze kopieën worden beheerd door Google of Apple; wij hebben er geen toegang toe. Je kunt ze uitschakelen in de instellingen van je toestel.</li>
+<li><strong>Online opslag</strong>: opslag gekoppeld aan een game-account (Google Play Games, Game Center) is in voorbereiding maar is <strong>niet actief</strong>. Als dat ooit wel zo is, wordt dit beleid vooraf bijgewerkt.</li>
+<li>De game bevat <strong>geen eigen analyse- of crashrapportagetool</strong>.</li>
+</ul>
+
+<h2 id="nl-3">3. Advertenties (Google AdMob)</h2>
+<p>De gratis versie toont advertenties die worden geleverd door <strong>Google AdMob</strong>:</p>
+<ul>
+<li><strong>interstitiële advertenties</strong>, nooit tijdens een duik, alleen tussen twee duiken en met een beperkte frequentie;</li>
+<li><strong>video's met beloning, altijd optioneel</strong>: je kiest er zelf voor een video te bekijken om de parels van een duik te verdubbelen („×2 parels” op het resultatenscherm) of om de <strong>Gezonken schat</strong> te openen.</li>
+</ul>
+<p><strong>Verwerkte gegevens.</strong> Om deze advertenties te tonen en te meten, verzamelt de SDK van Google automatisch het volgende en stuurt het naar Google (versleuteld tijdens de overdracht): de <strong>advertentie-ID</strong> van het toestel (Android: advertentie-ID en app-set-ID; iPhone/iPad: IDFA, alleen met je toestemming), het <strong>IP-adres</strong> (waarmee een benaderende, geen precieze, locatie kan worden geschat), <strong>interacties</strong> met advertenties (weergaven, tikken, bekeken video's), technische informatie over het toestel (model, besturingssysteem, taal) en <strong>diagnostische gegevens</strong> (prestaties, crashes van de SDK). Deze gegevens worden gebruikt voor advertenties, meting, analyse en fraudebestrijding. Officiële details: <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK — Data disclosure</a>.</p>
+<p><strong>Jouw keuze:</strong></p>
+<ul>
+<li>Bij de eerste start vraagt de game of je <strong>gepersonaliseerde advertenties</strong> accepteert of liever <strong>beperkte advertenties</strong> krijgt. Er is niets vooraf aangevinkt: personalisatie wordt alleen ingeschakeld als je ermee instemt.</li>
+<li>In de <strong>Europese Economische Ruimte, het Verenigd Koninkrijk en Zwitserland</strong> toont Google daarnaast zijn officiële toestemmingsformulier (het platform voor toestemmingsbeheer van Google), met een knop om <strong>toestemming te weigeren</strong>. Toegang tot je toestel voor advertentiedoeleinden berust daar op die toestemming; als je weigert, kan Google beperkte advertenties tonen, zonder voor advertenties een advertentie-ID te gebruiken.</li>
+<li><strong>Gepersonaliseerd</strong>: Google kan de advertentie-ID gebruiken om advertenties te kiezen op basis van je interesses. <strong>Beperkt</strong>: de game vraagt Google om niet-gepersonaliseerde advertenties, gekozen op basis van de context; Google verwerkt nog steeds bepaalde gegevens voor meting, frequentiebeperking en fraudebestrijding. De meest beperkende keuze (de onze of die van het formulier van Google) geldt.</li>
+<li>Je kunt op elk moment van gedachten veranderen: <em>Instellingen → Privacy</em> (schakelaar „Gepersonaliseerde advertenties” en „Privacykeuzes bekijken” wanneer het formulier van Google van toepassing is).</li>
+<li>Instellingen van het toestel: op Android <em>Instellingen → Google → Advertenties</em> (of <em>Privacy → Advertenties</em>, afhankelijk van het toestel) om de advertentie-ID te resetten of te verwijderen; je advertentiekeuzes bij Google: <a href="https://myadcenter.google.com">myadcenter.google.com</a>.</li>
+<li>Weigeren belet je niet om te spelen. Video's met beloning blijven optioneel en werken ook met beperkte advertenties. <strong>Abysse Premium</strong> (<a href="#nl-4">§ 4</a>) verwijdert de advertenties: de game initialiseert de advertentie-SDK dan niet meer.</li>
+</ul>
+<p><strong>Op iPhone en iPad</strong> (iOS-versie volgt): de advertentie-ID <strong>IDFA</strong> wordt alleen gebruikt als je dat toestaat via de vraag van Apple „Sta tracking toe” (App Tracking Transparency). Als je weigert, of later <em>Instellingen → Privacy en beveiliging → Tracking</em> uitschakelt, is de IDFA niet toegankelijk. Apple biedt ook <strong>SKAdNetwork</strong>, waarmee adverteerders de doeltreffendheid van een advertentie kunnen meten zonder jou te identificeren.</p>
+<p><strong>Profilering.</strong> Als je gepersonaliseerde advertenties accepteert, kan Google op basis van je activiteit een interesseprofiel opstellen om advertenties te kiezen. Deze profilering leidt niet tot een besluit met rechtsgevolgen of een vergelijkbaar aanzienlijk effect voor jou. Wij doen zelf geen profilering.</p>
+<p class="links">Regels van Google: <a href="https://policies.google.com/technologies/partner-sites">hoe Google gegevens gebruikt</a> · <a href="https://policies.google.com/privacy">privacybeleid van Google</a> · <a href="https://business.safety.google/adsservices/">voorwaarden voor gegevensbescherming van Google Ads</a></p>
+
+<h2 id="nl-4">4. In-app-aankopen</h2>
+<p>Twee optionele eenmalige aankopen, verwerkt door <strong>Google Play Billing</strong> (en, op iPhone/iPad, door de <strong>App Store</strong> van Apple):</p>
+<ul>
+<li><strong>Abysse Premium</strong>: verwijdert de advertenties (beloningen krijg je zonder video);</li>
+<li><strong>Steunpakket</strong>: Premium + een exclusieve skin + parels.</li>
+</ul>
+<p>Deze aankopen hebben een vaste, vooraf bekende inhoud (geen loting). De betaling wordt volledig afgehandeld door Google of Apple, die in veel landen tegenover jou als verkoper optreden: wij zien <strong>geen bankgegevens</strong>, naam of adres. De store laat de game op je toestel alleen weten of de aankoop actief is, en herstelt die op een nieuw toestel dat aan hetzelfde account is gekoppeld. Regels: <a href="https://policies.google.com/privacy">Google</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+<h2 id="nl-5">5. Ons schrijven, de game beoordelen</h2>
+<ul>
+<li>De knop <strong>„Feedback sturen”</strong> (<em>Instellingen</em>) opent <strong>je eigen</strong> e-mailapp met een vooraf ingevuld bericht (gameversie, taal, profielnummer, aantal duiken en overwinningen), dat je kunt aanpassen of niet versturen.</li>
+<li>Als je ons schrijft, ontvangen we je e-mailadres, je bericht en eventuele bijlagen, <strong>uitsluitend om je te antwoorden en de game te verbeteren</strong>. Ze worden niet verkocht, gedeeld of voor advertenties gebruikt. Ze worden bewaard bij onze e-mailprovider (momenteel Google Gmail) en verwijderd <strong>2 jaar na ons laatste contact</strong>, of eerder op eenvoudig verzoek.</li>
+<li>Het verzoek om een <strong>beoordeling</strong> gebruikt het recensiesysteem van Google Play (of van de App Store); je recensie wordt door de store beheerd.</li>
+</ul>
+
+<h2 id="nl-6">6. Overzichtstabel</h2>
+<table>
+<caption>Wie verwerkt wat, waarom, op welke grondslag en hoe lang</caption>
+<thead><tr><th scope="col">Gegevens</th><th scope="col">Doel</th><th scope="col">Rechtsgrond</th><th scope="col">Bewaartermijn</th><th scope="col">Ontvanger</th></tr></thead>
+<tbody>
+<tr><td data-label="Gegevens">Voortgang, instellingen, profielnamen, status van aankopen</td><td data-label="Doel">De game laten werken</td><td data-label="Rechtsgrond">Uitvoering van de overeenkomst (de game leveren die je gebruikt); strikt noodzakelijke opslag</td><td data-label="Bewaartermijn">Tot je ze wist of de game verwijdert</td><td data-label="Ontvanger">Niemand: blijven op je toestel</td></tr>
+<tr><td data-label="Gegevens">Back-upkopie van het toestel</td><td data-label="Doel">Je gegevens op een nieuw toestel terugzetten</td><td data-label="Rechtsgrond">Jouw keuze in de instellingen van het toestel (verwerking door Google / Apple)</td><td data-label="Bewaartermijn">Volgens Google / Apple</td><td data-label="Ontvanger">Google (Android) of Apple (iCloud)</td></tr>
+<tr><td data-label="Gegevens">Advertentie-ID, IP-adres, interacties, technische en diagnostische gegevens</td><td data-label="Doel">Gepersonaliseerde advertenties</td><td data-label="Rechtsgrond">Toestemming</td><td data-label="Bewaartermijn">Volgens Google (<a href="https://policies.google.com/technologies/retention">bewaartermijnen van Google</a>)</td><td data-label="Ontvanger">Google (AdMob)</td></tr>
+<tr><td data-label="Gegevens">Dezelfde, zonder advertentieprofiel</td><td data-label="Doel">Beperkte advertenties, meting, frequentiebeperking, fraudebestrijding</td><td data-label="Rechtsgrond">Gerechtvaardigd belang (een gratis game financieren, veiligheid van advertenties); toestemming voor toegang tot het toestel waar de wet dat vereist (EER, Verenigd Koninkrijk, Zwitserland)</td><td data-label="Bewaartermijn">Volgens Google</td><td data-label="Ontvanger">Google (AdMob)</td></tr>
+<tr><td data-label="Gegevens">Aankoop (product, status, store-account)</td><td data-label="Doel">Premium / het pakket verkopen, ontgrendelen en herstellen</td><td data-label="Rechtsgrond">Uitvoering van de overeenkomst; wettelijke (boekhoudkundige, fiscale) verplichtingen van Google / Apple als verkopers</td><td data-label="Bewaartermijn">Status op het toestel: tot verwijdering van de game; bij de store: volgens Google / Apple</td><td data-label="Ontvanger">Google Play of Apple</td></tr>
+<tr><td data-label="Gegevens">Je e-mail en je bericht</td><td data-label="Doel">Je antwoorden, de game verbeteren</td><td data-label="Rechtsgrond">Gerechtvaardigd belang (je verzoek beantwoorden); uitvoering van de overeenkomst als het een aankoop betreft</td><td data-label="Bewaartermijn">2 jaar na het laatste contact, of korter op verzoek</td><td data-label="Ontvanger">Wij; onze e-mailprovider</td></tr>
+<tr><td data-label="Gegevens">Beoordeling en recensie</td><td data-label="Doel">Je recensie in de store publiceren</td><td data-label="Rechtsgrond">Verwerking door de store, op jouw initiatief</td><td data-label="Bewaartermijn">Volgens Google / Apple</td><td data-label="Ontvanger">Google Play of Apple</td></tr>
+</tbody>
+</table>
+
+<h2 id="nl-7">7. Rechtsgronden en gevolgen van weigeren</h2>
+<ul>
+<li><strong>Toestemming</strong>: gepersonaliseerde advertenties en, in de EER, het Verenigd Koninkrijk en Zwitserland, toegang tot je toestel (informatie lezen of opslaan) voor advertentiedoeleinden, overeenkomstig de „ePrivacy”-regels. Je kunt ze <strong>op elk moment intrekken</strong> (<a href="#nl-3">§ 3</a>), even gemakkelijk als je ze hebt gegeven; de intrekking heeft geen gevolgen voor wat eerder is gebeurd.</li>
+<li><strong>Gerechtvaardigd belang</strong>: niet-gepersonaliseerde of beperkte advertenties (die de gratis game financieren), meting van advertenties, frequentiebeperking en fraudebestrijding (verwerkingen door Google), het beantwoorden van je e-mails. Je kunt daartegen <strong>bezwaar maken</strong> (<a href="#nl-12">§ 12</a>); met de aankoop van Premium verdwijnen alle advertenties.</li>
+<li><strong>Uitvoering van de overeenkomst</strong>: de game laten werken, je aankopen leveren en herstellen.</li>
+<li><strong>Wettelijke verplichting</strong>: facturatie en verkoopboekhouding worden bijgehouden door Google of Apple, die de game en de aankopen voor onze rekening verkopen; wij ontvangen daarvoor geen spelersgegevens.</li>
+</ul>
+<p><strong>Vrijwillig karakter.</strong> Om te spelen zijn geen persoonsgegevens vereist. Gepersonaliseerde advertenties weigeren ontneemt niets aan de game (dezelfde inhoud, dezelfde beloningen); ons niet schrijven heeft geen enkel gevolg; aankopen zijn optioneel. Zonder internetverbinding werkt de game gewoon, alleen zonder advertenties.</p>
+
+<h2 id="nl-8">8. Bewaartermijnen</h2>
+<ul>
+<li><strong>Gegevens op je toestel</strong>: tot je ze wist (<a href="#nl-11">§ 11</a>) of de game verwijdert.</li>
+<li><strong>E-mails</strong>: 2 jaar na het laatste contact, of eerder op verzoek; langer alleen als dat nodig is om een recht te doen gelden of te verdedigen (geschil).</li>
+<li><strong>Gegevens verwerkt door Google of Apple</strong>: volgens hun eigen regels (<a href="https://policies.google.com/technologies/retention">bewaartermijnen van Google</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a>).</li>
+</ul>
+
+<h2 id="nl-9">9. Ontvangers en internationale doorgiften</h2>
+<ul>
+<li>Wij verkopen, verhuren en delen geen gegevens. De enige ontvangers zijn <strong>Google</strong> (advertenties, betalingen, back-up, e-mail) en, op iOS, <strong>Apple</strong>, zoals hierboven beschreven, en de autoriteiten als de wet ons daartoe verplicht.</li>
+<li>Google en Apple kunnen gegevens <strong>buiten de Europese Economische Ruimte</strong> verwerken, met name in de <strong>Verenigde Staten</strong>. Deze doorgiften berusten op het <strong>EU-VS-kader voor gegevensbescherming</strong> (Data Privacy Framework, met de Britse en Zwitserse uitbreidingen), waaraan Google LLC deelneemt, en op de <strong>modelcontractbepalingen</strong> van de Europese Commissie; Apple past zijn eigen waarborgen toe, beschreven in zijn <a href="https://www.apple.com/legal/privacy/">privacybeleid</a>. De gegevens die de advertentie-SDK verzamelt, worden via internet verzonden op het moment dat een advertentie wordt aangevraagd of getoond.</li>
+<li>Meer informatie: <a href="https://policies.google.com/privacy/frameworks">doorgiftekaders van Google</a> · <a href="https://www.dataprivacyframework.gov/">dataprivacyframework.gov</a>. De Verenigde Staten hebben geen algemene federale wet op gegevensbescherming; de bescherming berust op deze verbintenissen en op de wetten van de staten.</li>
+</ul>
+
+<h2 id="nl-10">10. Beveiliging</h2>
+<ul>
+<li>Geen eigen server: er is <strong>geen spelersdatabase</strong> die bij ons zou kunnen uitlekken.</li>
+<li>De gamegegevens staan in de privé-opslag van de app, ontoegankelijk voor andere apps (behalve op een aangepast toestel).</li>
+<li>Het verkeer van de advertentie-SDK en van de aankopen met Google of Apple is <strong>versleuteld tijdens de overdracht</strong> (HTTPS); de back-up van het toestel wordt versleuteld door Android of iOS.</li>
+<li>Onze mailbox is beveiligd met sterke authenticatie. Bij een inbreuk in verband met persoonsgegevens die jou betreft, melden we dat aan de autoriteit en, indien nodig, aan de betrokkenen, binnen de wettelijke termijnen.</li>
+</ul>
+
+<h2 id="nl-11">11. Je gegevens verwijderen</h2>
+<p>Geen account, dus ook geen account om te verwijderen. Jij houdt de controle:</p>
+<ul>
+<li><strong>Eén profiel</strong>: <em>Instellingen → Gegevens → Dit profiel wissen</em> (onmiddellijk, definitief).</li>
+<li><strong>De hele game</strong>: verwijder Abysse, of, op Android, <em>Instellingen → Apps → Abysse → Opslag → Gegevens wissen</em>.</li>
+<li><strong>Back-upkopie</strong>: Android, <em>Instellingen → Google → Back-up</em> (de back-up beheren of verwijderen); iPhone/iPad, <em>Instellingen → [je naam] → iCloud → Beheer opslag</em>.</li>
+<li><strong>Advertentiegegevens bij Google</strong>: verwijder of reset de advertentie-ID in de instellingen van je toestel, en beheer je Google-gegevens op <a href="https://myadcenter.google.com">myadcenter.google.com</a> en <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a>. Wij kunnen die gegevens niet aan jou koppelen: Google is het best geplaatst om ze te behandelen.</li>
+<li><strong>Je e-mails</strong>: schrijf ons op het adres in <a href="#nl-1">§ 1</a>; we verwijderen onze correspondentie binnen 1 maand en bevestigen je dat.</li>
+</ul>
+
+<h2 id="nl-12">12. Je rechten (Europese Unie, EER, Verenigd Koninkrijk, Zwitserland)</h2>
+<p>Je hebt recht op <strong>inzage</strong>, <strong>rectificatie</strong>, <strong>wissing</strong>, <strong>beperking</strong>, <strong>bezwaar</strong> (met name tegen een verwerking op grond van gerechtvaardigd belang, en op elk moment tegen direct marketing), <strong>overdraagbaarheid van gegevens</strong>, en het recht om je <strong>toestemming</strong> op elk moment <strong>in te trekken</strong>, zonder gevolgen voor wat eerder is gebeurd.</p>
+<ul>
+<li>Voor de gamegegevens oefen je de meeste rechten rechtstreeks op je toestel uit: inzage en overdraagbaarheid via <em>Instellingen → Gegevens → Opslag exporteren</em>; wissing in <a href="#nl-11">§ 11</a>; advertentietoestemming in <em>Instellingen → Privacy</em>.</li>
+<li>Voor je e-mails, of elk ander verzoek: schrijf ons (<a href="#nl-1">§ 1</a>). We antwoorden <strong>binnen een maand</strong> (te verlengen met twee maanden voor een complex verzoek, waarvan we je op de hoogte brengen). We kunnen je vragen te schrijven vanaf het betrokken adres, om na te gaan dat jij het echt bent.</li>
+<li>Voor gegevens die Google of Apple als zelfstandige verwerkingsverantwoordelijken verwerken, kun je je ook rechtstreeks tot hen wenden.</li>
+</ul>
+<p>Je kunt een <strong>klacht</strong> indienen bij een toezichthoudende autoriteit:</p>
+<ul class="links">
+<li>België: <a href="https://www.gegevensbeschermingsautoriteit.be">Gegevensbeschermingsautoriteit (GBA)</a></li>
+<li>Ander land van de EU/EER: <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">de autoriteit van je land (lijst)</a></li>
+<li>Verenigd Koninkrijk: <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office (ICO)</a></li>
+<li>Zwitserland: <a href="https://www.edoeb.admin.ch">Federal Data Protection and Information Commissioner (FDPIC / EDÖB)</a></li>
+</ul>
+
+<h2 id="nl-13">13. Rechten per land</h2>
+<p>Overal geldt één en hetzelfde beleid. De onderstaande rechten oefen je uit <strong>met dezelfde middelen</strong>: de instellingen van de game en van het toestel (<a href="#nl-3">§ 3</a>, <a href="#nl-11">§ 11</a>) en het adres in <a href="#nl-1">§ 1</a>. We zullen je nooit anders behandelen omdat je een recht uitoefent.</p>
+
+<h3>Verenigde Staten (Californië en andere staten)</h3>
+<ul>
+<li><strong>Categorieën</strong> (afgelopen 12 maanden): identificatoren (advertentie-ID, IP-adres), internetactiviteit (interacties met advertenties), benaderende geolocatie afgeleid van het IP-adres, afleidingen (interesses die Google vaststelt als je gepersonaliseerde advertenties accepteert), inhoud van je e-mails als je ons schrijft. <strong>Bronnen</strong>: je toestel (via de SDK van Google) en jijzelf. Geen gevoelige gegevens.</li>
+<li><strong>„Sale” / „share”</strong>: wij verkopen geen gegevens voor geld. Maar Google toestaan de advertentie-ID te gebruiken voor gerichte advertenties kan gelden als „verkoop” („sale”), „delen” („sharing”) of „gerichte advertenties” („targeted advertising”) in de zin van de wetten van Californië (CCPA/CPRA), Virginia, Colorado, Connecticut, Utah, Texas, Oregon en de andere staten met een vergelijkbare wet.</li>
+<li><strong>Afmelden („Do Not Sell or Share My Personal Information”)</strong>: kies <strong>„Alleen beperkte advertenties”</strong> in <em>Instellingen → Privacy</em>; verwijder of reset de advertentie-ID (Android) of weiger tracking (iPhone/iPad); als Google in de game zijn keuzebericht voor Amerikaanse staten toont, kun je ook dat gebruiken. Een app ontvangt het browsersignaal Global Privacy Control niet: deze instellingen zijn het equivalent daarvan. Je kunt ons ook schrijven.</li>
+<li><strong>Andere rechten</strong>: weten / inzage, corrigeren, verwijderen, overdraagbaarheid, en niet gediscrimineerd worden. Als we een verzoek weigeren, kun je <strong>beroep</strong> instellen door op ons bericht te antwoorden met het onderwerp „Appeal” (beroep); als de weigering blijft, kun je contact opnemen met de Attorney General (procureur-generaal) van je staat of, in Californië, met de <a href="https://cppa.ca.gov/">California Privacy Protection Agency</a>. Een gemachtigde kan namens jou optreden met een bewijs van machtiging.</li>
+<li>Video's met beloning zijn geen tegenprestatie voor je gegevens: ze werken ook met beperkte advertenties. Wij verkopen of delen niet bewust gegevens van personen jonger dan 16 jaar.</li>
+<li><strong>COPPA</strong>: zie <a href="#nl-14">§ 14</a>.</li>
+</ul>
+
+<h3>Canada en Quebec</h3>
+<p>PIPEDA en, in Quebec, Wet 25 (Loi 25): de technologie voor advertentiepersonalisatie (profilering) is <strong>uitgeschakeld tot je ze inschakelt</strong>; je gegevens kunnen buiten Quebec en Canada worden meegedeeld (Google, Apple, Verenigde Staten). Persoon verantwoordelijk voor de bescherming van persoonlijke inlichtingen: Pouglin (<a href="#nl-1">§ 1</a>). Klachten: <a href="https://www.priv.gc.ca">Office of the Privacy Commissioner of Canada</a> of <a href="https://www.cai.gouv.qc.ca">Commission d'accès à l'information du Québec</a>.</p>
+
+<h3>Brazilië (LGPD)</h3>
+<p>Rechtsgronden: toestemming, gerechtvaardigd belang en uitvoering van de overeenkomst (<a href="#nl-7">§ 7</a>). Je kunt bevestiging, inzage, correctie, anonimisering, blokkering of verwijdering, overdraagbaarheid en informatie over het delen van gegevens vragen, en je toestemming intrekken. Contactkanaal (encarregado): het adres in <a href="#nl-1">§ 1</a>. Klachten: <a href="https://www.gov.br/anpd">ANPD</a>.</p>
+
+<h3>Japan (APPI)</h3>
+<p>De informatie die aan derden wordt verstrekt (Google, en Apple op iOS), de doeleinden en de ontvangers ervan worden beschreven in <a href="#nl-3">§ 3</a> en <a href="#nl-6">§ 6</a>, ook met het oog op de regels inzake externe verzending van gebruikersinformatie. Ontvanger in het buitenland: Google LLC (Verenigde Staten), die zijn eigen maatregelen toepast (<a href="#nl-9">§ 9</a>). Je kunt openbaarmaking, correctie of stopzetting van het gebruik vragen. Autoriteit: <a href="https://www.ppc.go.jp/en/">Personal Information Protection Commission</a>.</p>
+
+<h3>Zuid-Korea (PIPA)</h3>
+<ul>
+<li>Gegevens, doeleinden en bewaartermijnen: <a href="#nl-6">§ 6</a> en <a href="#nl-8">§ 8</a>. Wij verstrekken geen gegevens aan derden voor hun eigen doeleinden, behalve wat de SDK van Google rechtstreeks voor advertenties verzamelt.</li>
+<li><strong>Doorgifte naar het buitenland</strong>: ontvangers Google LLC (Verenigde Staten) en Google Ireland Limited (Ierland); gegevens: advertentie-ID, IP-adres, interacties, technische gegevens; wanneer en hoe: via internet, versleuteld, bij elke advertentieaanvraag; doel en bewaartermijn: <a href="#nl-6">§ 6</a>. <strong>Om te weigeren</strong>: kies „Alleen beperkte advertenties” en verwijder de advertentie-ID, of koop Premium; de game blijft volledig speelbaar.</li>
+<li>Vernietiging: de gegevens op het toestel worden onmiddellijk en definitief gewist (<a href="#nl-11">§ 11</a>); e-mails worden definitief verwijderd zodra de termijn verstreken is.</li>
+<li>Privacyverantwoordelijke: Pouglin (<a href="#nl-1">§ 1</a>). Rechtsmiddelen: <a href="https://www.pipc.go.kr">PIPC</a>, meldpunt voor privacy-inbreuken van KISA (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, ☎ 118).</li>
+</ul>
+
+<h3>India (DPDP Act 2023)</h3>
+<p>Je kunt een overzicht van de verwerkte gegevens vragen, de correctie of wissing ervan vragen, je toestemming even gemakkelijk intrekken als je ze hebt gegeven, iemand aanwijzen om je rechten uit te oefenen, en ons een klacht sturen (adres in <a href="#nl-1">§ 1</a>, antwoord binnen 1 maand) voordat je je tot de Data Protection Board of India wendt.</p>
+
+<h3>Australië, Turkije en andere landen</h3>
+<p>Australië (Privacy Act): inzage, correctie en klacht bij ons en vervolgens bij de <a href="https://www.oaic.gov.au">OAIC</a>; ontvanger in het buitenland: Google (Verenigde Staten). Turkije (KVKK): rechten volgens artikel 11 (weten, inzage, corrigeren, wissen, de ontvangers in Turkije en in het buitenland kennen, bezwaar maken, schadevergoeding); klachten bij de <a href="https://www.kvkk.gov.tr">Personal Data Protection Authority (KVKK)</a>. In elk ander land heb je de rechten die je lokale wet toekent, die je op dezelfde manier uitoefent.</p>
+
+<h2 id="nl-14">14. Leeftijd</h2>
+<p>Abysse is bedoeld voor personen <strong>van 13 jaar en ouder</strong>. De game richt zich niet op kinderen en wij verzamelen niet bewust gegevens over kinderen jonger dan 13 jaar (ook in de zin van de Amerikaanse COPPA-regel). In sommige landen ligt de leeftijd voor digitale toestemming hoger (tot 16 jaar in de EU, 14 jaar in Zuid-Korea): kies daaronder „Alleen beperkte advertenties” of vraag toestemming aan een ouder. Als je denkt dat een kind ons heeft geschreven, neem dan contact met ons op: we verwijderen zijn of haar gegevens.</p>
+
+<h2 id="nl-15">15. Wijzigingen</h2>
+<p>Elke wijziging wordt op deze pagina gepubliceerd met de datum ervan. Belangrijke wijzigingen (bijvoorbeeld het inschakelen van online opslag of een nieuwe advertentiepartner) worden in de game aangekondigd voordat ze van kracht worden en, indien nodig, wordt opnieuw om je toestemming gevraagd.</p>
+
+<p class="note">Deze pagina is een vertaling van de <a href="privacy.html" hreflang="en">Engelse versie</a>. Bij verschillen is de Engelse versie doorslaggevend.</p>
+</main>
+</body>
+</html>

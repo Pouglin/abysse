@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Abysse — Pouglin</title>
-<meta name="description" content="Abysse, jeu mobile de survie sous-marine (Pouglin, développeur indépendant, Belgique). Abysse, an underwater survival mobile game.">
+<meta name="description" content="Abysse, an underwater survival mobile game by Pouglin, an independent developer based in Belgium. Privacy policy in 11 languages.">
+<!-- Adresse de contact pouglin@gmail.com : 1 occurrence ici (en-tête) ; voir aussi les pages privacy*.html. -->
 <style>
-:root{--bg:#f6f9fb;--fg:#14232e;--muted:#4a5d6b;--accent:#0b3d5c;--link:#0b6fa4;--line:#cfdbe4}
+:root{color-scheme:light dark;--bg:#f6f9fb;--fg:#14232e;--muted:#4a5d6b;--accent:#0b3d5c;--link:#0b6fa4;--line:#cfdbe4}
 @media (prefers-color-scheme:dark){:root{--bg:#07141d;--fg:#e3eef5;--muted:#a9bccb;--accent:#7cf4ff;--link:#7cd3ff;--line:#1f3646}}
 *{box-sizing:border-box}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:0 auto;padding:32px 16px 48px;line-height:1.6;color:var(--fg);background:var(--bg)}
 h1{font-size:2rem;margin:0 0 .2rem;color:var(--accent)}
 h2{font-size:1.1rem;margin:1.6rem 0 .4rem;color:var(--accent)}
 a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
 .muted{color:var(--muted)}
 .muted a{display:inline-block;min-height:44px;line-height:44px}
-ul{list-style:none;padding:0}li{margin:.5rem 0}
+ul{list-style:none;padding:0}li{margin:.2rem 0}
 li a{display:inline-block;min-height:44px;line-height:44px}
-hr{border:0;border-top:1px solid var(--line);margin:2rem 0}
+.langs{display:flex;flex-wrap:wrap;gap:0 1.2rem}
 </style>
 </head>
 <body>
 <h1>Abysse</h1>
 <p class="muted">Pouglin · <a href="mailto:pouglin@gmail.com">pouglin@gmail.com</a></p>
 
-<section lang="fr">
-<h2>Français</h2>
-<p>Abysse est un jeu mobile de survie sous-marine : une bulle, des vagues de créatures, des profondeurs à conquérir. Publié par Pouglin, développeur indépendant établi en Belgique.</p>
-<ul><li><a href="privacy.html#fr">Politique de confidentialité</a></li></ul>
-</section>
-
-<hr>
-
-<section lang="en">
-<h2>English</h2>
 <p>Abysse is an underwater survival mobile game: one bubble, waves of creatures, depths to conquer. Published by Pouglin, an independent developer based in Belgium.</p>
-<ul><li><a href="privacy.html#en">Privacy policy</a></li></ul>
-</section>
+<ul><li><a href="privacy.html">Privacy policy</a></li></ul>
+
+<h2 id="other-languages">Privacy policy in other languages</h2>
+<nav aria-labelledby="other-languages">
+<ul class="langs">
+<li><a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a></li>
+<li><a href="privacy-es.html" hreflang="es" lang="es">Español</a></li>
+<li><a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a></li>
+<li><a href="privacy-it.html" hreflang="it" lang="it">Italiano</a></li>
+<li><a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a></li>
+<li><a href="privacy-nl.html" hreflang="nl" lang="nl">Nederlands</a></li>
+<li><a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a></li>
+<li><a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a></li>
+<li><a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a></li>
+<li><a href="privacy-zh.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+</ul>
+</nav>
 </body>
 </html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abysse — Política de privacidad</title>
+<meta name="description" content="Política de privacidad del juego para móviles Abysse (Pouglin, Bélgica): sin cuenta, sin servidor, anuncios de Google AdMob personalizados solo con tu consentimiento, compras a través de las tiendas, tus derechos según tu país.">
+<link rel="alternate" hreflang="en" href="https://pouglin.github.io/abysse/privacy">
+<link rel="alternate" hreflang="fr" href="https://pouglin.github.io/abysse/privacy-fr">
+<link rel="alternate" hreflang="es" href="https://pouglin.github.io/abysse/privacy-es">
+<link rel="alternate" hreflang="de" href="https://pouglin.github.io/abysse/privacy-de">
+<link rel="alternate" hreflang="it" href="https://pouglin.github.io/abysse/privacy-it">
+<link rel="alternate" hreflang="pt" href="https://pouglin.github.io/abysse/privacy-pt">
+<link rel="alternate" hreflang="nl" href="https://pouglin.github.io/abysse/privacy-nl">
+<link rel="alternate" hreflang="ru" href="https://pouglin.github.io/abysse/privacy-ru">
+<link rel="alternate" hreflang="ja" href="https://pouglin.github.io/abysse/privacy-ja">
+<link rel="alternate" hreflang="ko" href="https://pouglin.github.io/abysse/privacy-ko">
+<link rel="alternate" hreflang="zh-Hans" href="https://pouglin.github.io/abysse/privacy-zh">
+<link rel="alternate" hreflang="x-default" href="https://pouglin.github.io/abysse/privacy">
+<!-- Adresse de contact pouglin@gmail.com : 2 occurrences par page (barre du haut, § 1), sur les 11 pages privacy*.html
+     + index.html. Ailleurs, le texte renvoie au § 1. Version anglaise (privacy.html) = version de référence. -->
+<style>
+:root{color-scheme:light dark;--bg:#f6f9fb;--fg:#14232e;--muted:#4a5d6b;--accent:#0b3d5c;--link:#0b6fa4;--line:#cfdbe4;--box:#e8f1f7}
+@media (prefers-color-scheme:dark){:root{--bg:#07141d;--fg:#e3eef5;--muted:#a9bccb;--accent:#7cf4ff;--link:#7cd3ff;--line:#1f3646;--box:#0e2230}}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px 48px;line-height:1.6;color:var(--fg);background:var(--bg);font-size:1rem}
+h1{font-size:1.6rem;margin:2rem 0 .3rem;color:var(--accent)}
+h2{font-size:1.12rem;margin:1.8rem 0 .4rem;color:var(--accent);scroll-margin-top:12px}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+p,li,td{overflow-wrap:anywhere}
+ul{padding-left:1.2rem}li{margin:.3rem 0}
+a{color:var(--link)}
+.top{display:flex;flex-wrap:wrap;gap:.5rem 1rem;align-items:center;justify-content:space-between;color:var(--muted);font-size:.95rem}
+.lang{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem}
+.lang label{color:var(--muted)}
+.lang select{min-height:44px;min-width:44px;padding:.4rem .7rem;font:inherit;color:var(--fg);background:var(--bg);border:1px solid var(--muted);border-radius:10px;cursor:pointer}
+.lang select:focus-visible,a:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.langlist{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:0 .9rem}
+.langlist li{margin:0}
+.langlist a{display:inline-block;min-height:44px;line-height:44px}
+.date{color:var(--muted)}
+.short{background:var(--box);border-radius:10px;padding:.8rem 1rem}
+.short ul{margin:.4rem 0 0}
+.toc{border:1px solid var(--line);border-radius:10px;padding:.4rem 1rem}
+.toc ol{margin:.2rem 0;padding-left:1.4rem;columns:2 16rem;column-gap:1.5rem}
+.toc li{margin:0;break-inside:avoid}
+.toc a,.links a{display:inline-block;min-height:44px;line-height:44px}
+.links{list-style:none;padding:0}
+.contact{background:var(--box);border-radius:10px;padding:.6rem 1rem}
+.contact a{display:inline-block;min-height:44px;line-height:44px;font-weight:600}
+.note{margin-top:2.5rem;padding-top:1rem;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+table{width:100%;border-collapse:collapse;margin:.8rem 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:.5rem .6rem;text-align:left;vertical-align:top}
+th{background:var(--box)}
+caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
+@media (max-width:640px){
+ table,thead,tbody,tr,th,td{display:block}
+ thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+ tr{border:1px solid var(--line);border-radius:10px;margin:0 0 .8rem;padding:.3rem 0;background:var(--bg)}
+ td{border:0;padding:.3rem .8rem}
+ td::before{content:attr(data-label);display:block;font-weight:700;color:var(--accent);font-size:.85rem}
+}
+</style>
+<noscript><style>.lang{display:none}</style></noscript>
+</head>
+<body>
+<header class="top">
+  <span><strong>Abysse</strong> · Pouglin · <a href="mailto:pouglin@gmail.com">pouglin@gmail.com</a></span>
+  <div class="lang">
+    <label for="lang">Idioma</label>
+    <select id="lang" onchange="if(this.value)location.href=this.value">
+      <option value="privacy.html" lang="en">English</option>
+      <option value="privacy-fr.html" lang="fr">Français</option>
+      <option value="privacy-es.html" lang="es" selected>Español</option>
+      <option value="privacy-de.html" lang="de">Deutsch</option>
+      <option value="privacy-it.html" lang="it">Italiano</option>
+      <option value="privacy-pt.html" lang="pt">Português</option>
+      <option value="privacy-nl.html" lang="nl">Nederlands</option>
+      <option value="privacy-ru.html" lang="ru">Русский</option>
+      <option value="privacy-ja.html" lang="ja">日本語</option>
+      <option value="privacy-ko.html" lang="ko">한국어</option>
+      <option value="privacy-zh.html" lang="zh-Hans">简体中文</option>
+    </select>
+  </div>
+  <noscript><nav aria-label="Idiomas"><ul class="langlist">
+    <li><a href="privacy.html" hreflang="en" lang="en">English</a></li>
+    <li><a href="privacy-fr.html" hreflang="fr" lang="fr">Français</a></li>
+    <li><a href="privacy-es.html" hreflang="es" lang="es" aria-current="page">Español</a></li>
+    <li><a href="privacy-de.html" hreflang="de" lang="de">Deutsch</a></li>
+    <li><a href="privacy-it.html" hreflang="it" lang="it">Italiano</a></li>
+    <li><a href="privacy-pt.html" hreflang="pt" lang="pt">Português</a></li>
+    <li><a href="privacy-nl.html" hreflang="nl" lang="nl">Nederlands</a></li>
+    <li><a href="privacy-ru.html" hreflang="ru" lang="ru">Русский</a></li>
+    <li><a href="privacy-ja.html" hreflang="ja" lang="ja">日本語</a></li>
+    <li><a href="privacy-ko.html" hreflang="ko" lang="ko">한국어</a></li>
+    <li><a href="privacy-zh.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a></li>
+  </ul></nav></noscript>
+</header>
+
+<main>
+<h1>Política de privacidad</h1>
+<p class="date"><strong>Última actualización: 4 de octubre de 2026</strong></p>
+
+<div class="short">
+<p><strong>En resumen</strong></p>
+<ul>
+<li><strong>Sin cuenta, sin servidor</strong>: tu progreso se queda en tu dispositivo. No recibimos nada, salvo que nos escribas.</li>
+<li>La versión gratuita muestra <strong>anuncios de Google AdMob</strong>. Google trata entonces datos técnicos (ID de publicidad, dirección IP, interacciones con los anuncios). Los anuncios <strong>solo se personalizan si lo aceptas</strong>, y puedes cambiar de opinión en cualquier momento (<em>Ajustes → Privacidad</em>).</li>
+<li>Las <strong>compras</strong> pasan por Google Play (o el App Store): no vemos ningún dato de pago.</li>
+<li>Puedes <strong>borrarlo todo tú mismo</strong> (<a href="#es-11">§ 11</a>) y ejercer tus derechos por correo electrónico (<a href="#es-12">§ 12</a> y <a href="#es-13">§ 13</a>).</li>
+</ul>
+</div>
+
+<nav class="toc" aria-label="Índice">
+<ol>
+<li><a href="#es-1">Quién es el responsable</a></li>
+<li><a href="#es-2">Datos en tu dispositivo</a></li>
+<li><a href="#es-3">Publicidad (Google AdMob)</a></li>
+<li><a href="#es-4">Compras integradas</a></li>
+<li><a href="#es-5">Escribirnos, valorar el juego</a></li>
+<li><a href="#es-6">Tabla resumen</a></li>
+<li><a href="#es-7">Bases jurídicas, negativa</a></li>
+<li><a href="#es-8">Plazos de conservación</a></li>
+<li><a href="#es-9">Destinatarios, transferencias</a></li>
+<li><a href="#es-10">Seguridad</a></li>
+<li><a href="#es-11">Eliminar tus datos</a></li>
+<li><a href="#es-12">Tus derechos</a></li>
+<li><a href="#es-13">Derechos según tu país</a></li>
+<li><a href="#es-14">Edad</a></li>
+<li><a href="#es-15">Cambios</a></li>
+</ol>
+</nav>
+
+<h2 id="es-1">1. Quién es el responsable</h2>
+<p>Abysse es un juego para móviles publicado por <strong>Pouglin</strong>, desarrollador independiente (persona física) establecido en <strong>Bélgica</strong> («nosotros» en este texto). Somos el <strong>responsable del tratamiento</strong> de lo que depende de nosotros: el propio juego y los correos electrónicos que nos envíes.</p>
+<p class="contact">Contacto para cualquier pregunta o solicitud relativa a tus datos:<br><a href="mailto:pouglin@gmail.com">pouglin@gmail.com</a></p>
+<ul>
+<li><strong>Datos de contacto completos del editor</strong>: consulta la ficha del juego en Google Play (apartado «Información del desarrollador» / «Asistencia de la aplicación») o en el App Store.</li>
+<li>Dado nuestro tamaño, no hemos designado un delegado de protección de datos: tramitamos las solicitudes nosotros mismos. También somos la persona responsable de la protección de la información personal (Quebec) y el responsable de privacidad a efectos de las demás leyes citadas en el <a href="#es-13">§ 13</a>.</li>
+<li><strong>Google</strong> (Google Ireland Limited en Europa, Google LLC en Estados Unidos) es <strong>responsable independiente</strong> de sus propios tratamientos: publicidad (AdMob), pagos (Google Play), copia de seguridad de Android, reseñas de Google Play. En iPhone y iPad, <strong>Apple</strong> lo es respecto del App Store, los pagos e iCloud. A esos tratamientos se aplican sus propias políticas.</li>
+</ul>
+
+<h2 id="es-2">2. Qué guarda el juego en tu dispositivo</h2>
+<ul>
+<li>Tu progreso (perlas, tienda, profundidades, skins, logros, acuario), tus ajustes (idioma, sonido, pantalla, elección publicitaria), el estado de tus compras y tus <strong>5 perfiles</strong> (con los nombres que les des) se guardan <strong>únicamente en tu dispositivo</strong>, en el almacenamiento privado de la aplicación.</li>
+<li>No tenemos <strong>ningún servidor</strong> y no recibimos nada de todo esto. El juego no pide cuenta, nombre, dirección de correo electrónico, ubicación, contactos, fotos, micrófono ni cámara.</li>
+<li><strong>Exportar / importar</strong>: en <em>Ajustes → Datos</em>, puedes copiar un código de partida guardada al portapapeles y pegarlo en otro lugar. Ese código contiene el progreso del perfil y su nombre; no está cifrado y solo sale de tu dispositivo si tú mismo lo pegas o lo envías. No lo publiques si el nombre del perfil te identifica.</li>
+<li><strong>Copia de seguridad del dispositivo</strong>: si la copia de seguridad de Google está activada en tu teléfono Android, Android puede copiar los datos del juego, <strong>cifrados</strong>, en tu cuenta de Google y restaurarlos en un dispositivo nuevo. En iPhone/iPad, si la copia de seguridad del dispositivo en iCloud está activada, los datos del juego también pueden incluirse en ella. Estas copias las gestionan Google o Apple; nosotros no tenemos acceso a ellas. Puedes desactivarlas en los ajustes del dispositivo.</li>
+<li><strong>Guardado en línea</strong>: se está preparando un guardado vinculado a una cuenta de juego (Google Play Juegos, Game Center), pero <strong>no está activo</strong>. Si algún día lo está, esta política se actualizará antes.</li>
+<li>El juego no incluye <strong>ninguna herramienta propia de analítica ni de registro de fallos</strong>.</li>
+</ul>
+
+<h2 id="es-3">3. Publicidad (Google AdMob)</h2>
+<p>La versión gratuita muestra anuncios proporcionados por <strong>Google AdMob</strong>:</p>
+<ul>
+<li><strong>anuncios intersticiales</strong>, nunca durante una partida, solo entre partidas y con una frecuencia limitada;</li>
+<li><strong>vídeos con recompensa, siempre opcionales</strong>: tú decides ver un vídeo para duplicar las perlas de una partida («×2 perlas» en la pantalla de resultados) o para abrir el <strong>Tesoro hundido</strong>.</li>
+</ul>
+<p><strong>Datos tratados.</strong> Para mostrar y medir estos anuncios, el SDK de Google recopila automáticamente y envía a Google (cifrados en tránsito): el <strong>ID de publicidad</strong> del dispositivo (Android: ID de publicidad e ID de conjunto de aplicaciones; iPhone/iPad: IDFA, solo con tu permiso), la <strong>dirección IP</strong> (que permite estimar una ubicación aproximada, no precisa), las <strong>interacciones</strong> con los anuncios (impresiones, toques, vídeos vistos), información técnica del dispositivo (modelo, sistema, idioma) y <strong>datos de diagnóstico</strong> (rendimiento, fallos del SDK). Estos datos se usan para publicidad, medición, analítica y prevención del fraude. Detalle oficial: <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google Mobile Ads SDK — Data disclosure</a>.</p>
+<p><strong>Tu elección:</strong></p>
+<ul>
+<li>En el primer inicio, el juego te pregunta si aceptas <strong>anuncios personalizados</strong> o prefieres <strong>anuncios limitados</strong>. No hay nada marcado de antemano: la personalización solo se activa si la aceptas.</li>
+<li>En el <strong>Espacio Económico Europeo, el Reino Unido y Suiza</strong>, Google muestra además su formulario oficial de consentimiento (plataforma de gestión del consentimiento de Google), con un botón <strong>No consentir</strong>. Allí, el acceso a tu dispositivo con fines publicitarios se basa en ese consentimiento; si lo rechazas, Google puede mostrar anuncios limitados, sin usar un identificador publicitario con fines publicitarios.</li>
+<li><strong>Personalizados</strong>: Google puede usar el ID de publicidad para elegir anuncios según tus intereses. <strong>Limitados</strong>: el juego pide a Google anuncios no personalizados, elegidos según el contexto; Google sigue tratando algunos datos para la medición, la limitación de frecuencia y la prevención del fraude. Prevalece la elección más restrictiva (la nuestra o la del formulario de Google).</li>
+<li>Puedes cambiar de opinión en cualquier momento: <em>Ajustes → Privacidad</em> (interruptor «Anuncios personalizados» y «Revisar mis opciones de privacidad» cuando se aplica el formulario de Google).</li>
+<li>Ajustes del dispositivo: en Android, <em>Ajustes → Google → Anuncios</em> (o <em>Privacidad → Anuncios</em>, según el dispositivo) para restablecer o eliminar el ID de publicidad; tus opciones de publicidad de Google: <a href="https://myadcenter.google.com">myadcenter.google.com</a>.</li>
+<li>Negarte no te impide jugar. Los vídeos con recompensa siguen siendo opcionales y también funcionan con anuncios limitados. <strong>Abysse Premium</strong> (<a href="#es-4">§ 4</a>) elimina los anuncios: el juego deja entonces de inicializar el SDK publicitario.</li>
+</ul>
+<p><strong>En iPhone y iPad</strong> (versión iOS próximamente): el identificador publicitario <strong>IDFA</strong> solo se usa si lo autorizas mediante la solicitud de Apple «Permitir rastreo» (App Tracking Transparency). Si lo rechazas, o si más adelante desactivas <em>Ajustes → Privacidad y seguridad → Rastreo</em>, el IDFA no es accesible. Apple también ofrece <strong>SKAdNetwork</strong>, que permite a los anunciantes medir la eficacia de un anuncio sin identificarte.</p>
+<p><strong>Elaboración de perfiles.</strong> Si aceptas los anuncios personalizados, Google puede elaborar un perfil de intereses a partir de tu actividad para elegir los anuncios. Esta elaboración de perfiles no da lugar a ninguna decisión que produzca efectos jurídicos en ti o te afecte de forma similarmente significativa. Nosotros no elaboramos ningún perfil.</p>
+<p class="links">Normas de Google: <a href="https://policies.google.com/technologies/partner-sites">cómo usa Google los datos</a> · <a href="https://policies.google.com/privacy">política de privacidad de Google</a> · <a href="https://business.safety.google/adsservices/">condiciones de protección de datos de Google Ads</a></p>
+
+<h2 id="es-4">4. Compras integradas</h2>
+<p>Dos compras únicas y opcionales, procesadas por <strong>Google Play Billing</strong> (y, en iPhone/iPad, por el <strong>App Store</strong> de Apple):</p>
+<ul>
+<li><strong>Abysse Premium</strong>: elimina los anuncios (las recompensas se obtienen sin vídeo);</li>
+<li><strong>Pack de apoyo</strong>: Premium + un skin exclusivo + perlas.</li>
+</ul>
+<p>Estas compras tienen un contenido fijo y conocido de antemano (sin sorteo aleatorio). El pago lo gestionan íntegramente Google o Apple, que actúan como vendedores frente a ti en muchos países: no vemos <strong>ningún dato bancario</strong>, ni nombre, ni dirección. La tienda solo indica al juego, en tu dispositivo, si la compra está activa, y la restaura en un dispositivo nuevo vinculado a la misma cuenta. Normas: <a href="https://policies.google.com/privacy">Google</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+<h2 id="es-5">5. Escribirnos, valorar el juego</h2>
+<ul>
+<li>El botón <strong>«Enviar comentarios»</strong> (<em>Ajustes</em>) abre <strong>tu</strong> aplicación de correo con un mensaje prerrellenado (versión del juego, idioma, número de perfil, número de partidas y de victorias), que puedes modificar o no enviar.</li>
+<li>Si nos escribes, recibimos tu dirección de correo electrónico, tu mensaje y lo que adjuntes, <strong>únicamente para responderte y mejorar el juego</strong>. No se venden, no se comparten ni se usan para publicidad. Se conservan en nuestro proveedor de correo (actualmente Google Gmail) y se eliminan <strong>2 años después de nuestro último intercambio</strong>, o antes si lo solicitas.</li>
+<li>La solicitud de <strong>valoración</strong> usa el sistema de reseñas de Google Play (o del App Store); tu reseña la gestiona la tienda.</li>
+</ul>
+
+<h2 id="es-6">6. Tabla resumen</h2>
+<table>
+<caption>Quién trata qué, por qué, con qué base y durante cuánto tiempo</caption>
+<thead><tr><th scope="col">Datos</th><th scope="col">Finalidad</th><th scope="col">Base jurídica</th><th scope="col">Conservación</th><th scope="col">Destinatario</th></tr></thead>
+<tbody>
+<tr><td data-label="Datos">Progreso, ajustes, nombres de perfiles, estado de las compras</td><td data-label="Finalidad">Hacer funcionar el juego</td><td data-label="Base jurídica">Ejecución de un contrato (proporcionar el juego que usas); almacenamiento estrictamente necesario</td><td data-label="Conservación">Hasta que los borres o desinstales el juego</td><td data-label="Destinatario">Nadie: se quedan en tu dispositivo</td></tr>
+<tr><td data-label="Datos">Copia de seguridad del dispositivo</td><td data-label="Finalidad">Restaurar tus datos en un dispositivo nuevo</td><td data-label="Base jurídica">Tu elección en los ajustes del dispositivo (tratamiento de Google / Apple)</td><td data-label="Conservación">Según Google / Apple</td><td data-label="Destinatario">Google (Android) o Apple (iCloud)</td></tr>
+<tr><td data-label="Datos">ID de publicidad, dirección IP, interacciones, datos técnicos y de diagnóstico</td><td data-label="Finalidad">Anuncios personalizados</td><td data-label="Base jurídica">Consentimiento</td><td data-label="Conservación">Según Google (<a href="https://policies.google.com/technologies/retention">plazos de conservación de Google</a>)</td><td data-label="Destinatario">Google (AdMob)</td></tr>
+<tr><td data-label="Datos">Los mismos, sin perfil publicitario</td><td data-label="Finalidad">Anuncios limitados, medición, limitación de frecuencia, prevención del fraude</td><td data-label="Base jurídica">Interés legítimo (financiar un juego gratuito, seguridad de los anuncios); consentimiento para el acceso al dispositivo donde la ley lo exige (EEE, Reino Unido, Suiza)</td><td data-label="Conservación">Según Google</td><td data-label="Destinatario">Google (AdMob)</td></tr>
+<tr><td data-label="Datos">Compra (producto, estado, cuenta de la tienda)</td><td data-label="Finalidad">Vender, desbloquear y restaurar Premium / el pack</td><td data-label="Base jurídica">Ejecución de un contrato; obligaciones legales (contables, fiscales) de Google / Apple como vendedores</td><td data-label="Conservación">Estado en el dispositivo: hasta la desinstalación; en la tienda: según Google / Apple</td><td data-label="Destinatario">Google Play o Apple</td></tr>
+<tr><td data-label="Datos">Tu correo electrónico y tu mensaje</td><td data-label="Finalidad">Responderte, mejorar el juego</td><td data-label="Base jurídica">Interés legítimo (responder a tu solicitud); ejecución de un contrato si se refiere a una compra</td><td data-label="Conservación">2 años después del último intercambio, o menos si lo solicitas</td><td data-label="Destinatario">Nosotros; nuestro proveedor de correo</td></tr>
+<tr><td data-label="Datos">Valoración y reseña</td><td data-label="Finalidad">Publicar tu reseña en la tienda</td><td data-label="Base jurídica">Tratamiento de la tienda, por iniciativa tuya</td><td data-label="Conservación">Según Google / Apple</td><td data-label="Destinatario">Google Play o Apple</td></tr>
+</tbody>
+</table>
+
+<h2 id="es-7">7. Bases jurídicas y consecuencias de negarte</h2>
+<ul>
+<li><strong>Consentimiento</strong>: publicidad personalizada y, en el EEE, el Reino Unido y Suiza, acceso a tu dispositivo (lectura o almacenamiento de información) con fines publicitarios, conforme a las normas de «ePrivacy». Puedes <strong>retirarlo en cualquier momento</strong> (<a href="#es-3">§ 3</a>), con la misma facilidad con que lo diste; la retirada no afecta a lo realizado anteriormente.</li>
+<li><strong>Interés legítimo</strong>: publicidad no personalizada o limitada (que financia el juego gratuito), medición de anuncios, limitación de frecuencia y prevención del fraude (tratamientos de Google), respuesta a tus correos. Puedes <strong>oponerte</strong> (<a href="#es-12">§ 12</a>); comprar Premium elimina toda la publicidad.</li>
+<li><strong>Ejecución de un contrato</strong>: hacer funcionar el juego, proporcionar y restaurar tus compras.</li>
+<li><strong>Obligación legal</strong>: la facturación y la contabilidad de las ventas las llevan Google o Apple, que venden el juego y las compras por cuenta nuestra; no recibimos ningún dato de jugadores con ese fin.</li>
+</ul>
+<p><strong>Carácter opcional.</strong> No se exige ningún dato personal para jugar. Rechazar la publicidad personalizada no le quita nada al juego (mismos contenidos, mismas recompensas); no escribirnos no tiene ninguna consecuencia; las compras son opcionales. Sin conexión a Internet, el juego funciona, simplemente sin anuncios.</p>
+
+<h2 id="es-8">8. Plazos de conservación</h2>
+<ul>
+<li><strong>Datos en tu dispositivo</strong>: hasta que los borres (<a href="#es-11">§ 11</a>) o desinstales el juego.</li>
+<li><strong>Correos electrónicos</strong>: 2 años después del último intercambio, o antes si lo solicitas; más tiempo solo si es necesario para la formulación, el ejercicio o la defensa de reclamaciones.</li>
+<li><strong>Datos tratados por Google o Apple</strong>: según sus propias normas (<a href="https://policies.google.com/technologies/retention">plazos de conservación de Google</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a>).</li>
+</ul>
+
+<h2 id="es-9">9. Destinatarios y transferencias internacionales</h2>
+<ul>
+<li>No vendemos, alquilamos ni compartimos ningún dato. Los únicos destinatarios son <strong>Google</strong> (publicidad, pagos, copia de seguridad, correo) y, en iOS, <strong>Apple</strong>, como se ha descrito, así como las autoridades cuando la ley lo exija.</li>
+<li>Google y Apple pueden tratar datos <strong>fuera del Espacio Económico Europeo</strong>, en particular en <strong>Estados Unidos</strong>. Estas transferencias se basan en el <strong>Marco de Privacidad de Datos UE-EE. UU.</strong> (EU–U.S. Data Privacy Framework, con sus extensiones para el Reino Unido y Suiza), al que está adherida Google LLC, y en las <strong>cláusulas contractuales tipo</strong> de la Comisión Europea; Apple aplica sus propias garantías, descritas en su <a href="https://www.apple.com/legal/privacy/">política de privacidad</a>. Los datos recopilados por el SDK publicitario se envían por Internet en el momento en que se solicita o se muestra un anuncio.</li>
+<li>Más información: <a href="https://policies.google.com/privacy/frameworks">marcos de transferencia de Google</a> · <a href="https://www.dataprivacyframework.gov/">dataprivacyframework.gov</a>. Estados Unidos no tiene una ley federal general de protección de datos; la protección se basa en estos compromisos y en las leyes de los estados.</li>
+</ul>
+
+<h2 id="es-10">10. Seguridad</h2>
+<ul>
+<li>Sin servidor propio: no existe <strong>ninguna base de datos de jugadores</strong> que pueda filtrarse por nuestra parte.</li>
+<li>Los datos del juego están en el almacenamiento privado de la aplicación, inaccesible para las demás aplicaciones (salvo en un dispositivo modificado).</li>
+<li>Los intercambios del SDK publicitario y de las compras con Google o Apple están <strong>cifrados en tránsito</strong> (HTTPS); la copia de seguridad del dispositivo la cifra Android o iOS.</li>
+<li>Nuestro correo está protegido por una autenticación reforzada. En caso de violación de la seguridad de los datos que te afecte, lo notificaremos a la autoridad y, cuando sea necesario, a las personas afectadas, dentro de los plazos legales.</li>
+</ul>
+
+<h2 id="es-11">11. Eliminar tus datos</h2>
+<p>Sin cuenta, no hay cuenta que eliminar. Tú tienes el control:</p>
+<ul>
+<li><strong>Un perfil</strong>: <em>Ajustes → Datos → Borrar este perfil</em> (inmediato, definitivo).</li>
+<li><strong>Todo el juego</strong>: desinstala Abysse o, en Android, <em>Ajustes → Aplicaciones → Abysse → Almacenamiento → Borrar datos</em>.</li>
+<li><strong>Copia de seguridad</strong>: Android, <em>Ajustes → Google → Copia de seguridad</em> (gestionar o eliminar la copia); iPhone/iPad, <em>Ajustes → [tu nombre] → iCloud → Gestionar almacenamiento</em>.</li>
+<li><strong>Datos publicitarios en Google</strong>: elimina o restablece el ID de publicidad en los ajustes del dispositivo, y gestiona tus datos de Google en <a href="https://myadcenter.google.com">myadcenter.google.com</a> y <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a>. No podemos vincular esos datos contigo: Google es quien mejor puede atender esa solicitud.</li>
+<li><strong>Tus correos</strong>: escríbenos a la dirección del <a href="#es-1">§ 1</a>; eliminaremos nuestros intercambios en el plazo de 1 mes y te lo confirmaremos.</li>
+</ul>
+
+<h2 id="es-12">12. Tus derechos (Unión Europea, EEE, Reino Unido, Suiza)</h2>
+<p>Tienes derecho de <strong>acceso</strong>, <strong>rectificación</strong>, <strong>supresión</strong>, <strong>limitación del tratamiento</strong>, <strong>oposición</strong> (en particular a un tratamiento basado en el interés legítimo y, en cualquier momento, a la mercadotecnia directa), <strong>portabilidad de los datos</strong>, y derecho a <strong>retirar tu consentimiento</strong> en cualquier momento, sin que ello afecte a lo realizado anteriormente.</p>
+<ul>
+<li>Para los datos del juego, la mayoría se ejercen directamente en tu dispositivo: acceso y portabilidad mediante <em>Ajustes → Datos → Exportar partida</em>; supresión en el <a href="#es-11">§ 11</a>; consentimiento publicitario en <em>Ajustes → Privacidad</em>.</li>
+<li>Para tus correos, o cualquier otra solicitud: escríbenos (<a href="#es-1">§ 1</a>). Respondemos <strong>en el plazo de un mes</strong> (prorrogable dos meses más si la solicitud es compleja, avisándote). Podemos pedirte que escribas desde la dirección afectada, para comprobar que eres realmente tú.</li>
+<li>Para los datos tratados por Google o Apple como responsables independientes, también puedes dirigirte directamente a ellos.</li>
+</ul>
+<p>Puedes presentar una <strong>reclamación</strong> ante una autoridad de control:</p>
+<ul class="links">
+<li>Bélgica: <a href="https://www.dataprotectionauthority.be">Autoridad de Protección de Datos (APD/GBA)</a></li>
+<li>Otro país de la UE/EEE: <a href="https://www.edpb.europa.eu/about-edpb/about-edpb/members_en">la autoridad de tu país (lista)</a></li>
+<li>Reino Unido: <a href="https://ico.org.uk/make-a-complaint/">Information Commissioner's Office (ICO)</a></li>
+<li>Suiza: <a href="https://www.edoeb.admin.ch">Comisionado Federal de Protección de Datos e Información (FDPIC/PFPDT)</a></li>
+</ul>
+
+<h2 id="es-13">13. Derechos según tu país</h2>
+<p>Se aplica una única política en todas partes. Los derechos siguientes se ejercen <strong>por los mismos medios</strong>: los ajustes del juego y del dispositivo (<a href="#es-3">§ 3</a>, <a href="#es-11">§ 11</a>) y la dirección del <a href="#es-1">§ 1</a>. Nunca te trataremos de forma diferente por ejercer un derecho.</p>
+
+<h3>Estados Unidos (California y otros estados)</h3>
+<ul>
+<li><strong>Categorías</strong> (últimos 12 meses): identificadores (ID de publicidad, dirección IP), actividad en Internet (interacciones con los anuncios), geolocalización aproximada deducida de la IP, inferencias (intereses establecidos por Google si aceptas los anuncios personalizados), contenido de tus correos si nos escribes. <strong>Fuentes</strong>: tu dispositivo (a través del SDK de Google) y tú mismo. Ningún dato sensible.</li>
+<li><strong>«Sale» / «share»</strong>: no vendemos ningún dato a cambio de dinero. Pero permitir que Google use el ID de publicidad para publicidad dirigida puede constituir una «venta» («sale»), un «intercambio» («sharing») o «publicidad dirigida» («targeted advertising») según las leyes de California (CCPA/CPRA), Virginia, Colorado, Connecticut, Utah, Texas, Oregón y los demás estados con una ley comparable.</li>
+<li><strong>Exclusión voluntaria («Do Not Sell or Share My Personal Information»)</strong>: elige <strong>«Solo anuncios limitados»</strong> en <em>Ajustes → Privacidad</em>; elimina o restablece el ID de publicidad (Android) o rechaza el rastreo (iPhone/iPad); si Google muestra en el juego su mensaje de privacidad para los estados de EE. UU., también puedes usarlo. Una aplicación no recibe la señal de navegador Global Privacy Control: estos ajustes son su equivalente. También puedes escribirnos.</li>
+<li><strong>Otros derechos</strong>: a saber / acceder, corregir, eliminar, portabilidad y no discriminación. Si denegamos una solicitud, puedes <strong>recurrir</strong> respondiendo a nuestro mensaje con el asunto «Appeal» (recurso); si se mantiene la denegación, puedes dirigirte al fiscal general (Attorney General) de tu estado o, en California, a la <a href="https://cppa.ca.gov/">California Privacy Protection Agency</a>. Un agente autorizado puede actuar en tu nombre con una prueba de la autorización.</li>
+<li>Los vídeos con recompensa no son una contraprestación por tus datos: también funcionan con anuncios limitados. No vendemos ni compartimos a sabiendas datos de personas menores de 16 años.</li>
+<li><strong>COPPA</strong>: véase el <a href="#es-14">§ 14</a>.</li>
+</ul>
+
+<h3>Canadá y Quebec</h3>
+<p>PIPEDA y, en Quebec, la Ley 25 (Loi 25): la tecnología de personalización publicitaria (elaboración de perfiles) está <strong>desactivada hasta que tú la actives</strong>; tus datos pueden comunicarse fuera de Quebec y de Canadá (Google, Apple, Estados Unidos). Persona responsable de la protección de la información personal: Pouglin (<a href="#es-1">§ 1</a>). Reclamaciones: <a href="https://www.priv.gc.ca">Office of the Privacy Commissioner of Canada</a> o <a href="https://www.cai.gouv.qc.ca">Commission d'accès à l'information du Québec</a>.</p>
+
+<h3>Brasil (LGPD)</h3>
+<p>Bases jurídicas: consentimiento, interés legítimo y ejecución de un contrato (<a href="#es-7">§ 7</a>). Puedes solicitar confirmación, acceso, corrección, anonimización, bloqueo o eliminación, portabilidad, información sobre el uso compartido, y retirar tu consentimiento. Canal de contacto (encarregado): la dirección del <a href="#es-1">§ 1</a>. Reclamaciones: <a href="https://www.gov.br/anpd">ANPD</a>.</p>
+
+<h3>Japón (APPI)</h3>
+<p>La información enviada a terceros (Google y, en iOS, Apple), sus finalidades y sus destinatarios se describen en el <a href="#es-3">§ 3</a> y el <a href="#es-6">§ 6</a>, también a efectos de las normas sobre la transmisión externa de información de usuarios. Destinatario en el extranjero: Google LLC (Estados Unidos), que aplica sus propias medidas (<a href="#es-9">§ 9</a>). Puedes solicitar la divulgación, la corrección o el cese del uso. Autoridad: <a href="https://www.ppc.go.jp/en/">Personal Information Protection Commission</a>.</p>
+
+<h3>Corea del Sur (PIPA)</h3>
+<ul>
+<li>Datos, finalidades y conservación: <a href="#es-6">§ 6</a> y <a href="#es-8">§ 8</a>. No facilitamos ningún dato a terceros para sus propios fines, salvo lo que el SDK de Google recopila directamente para la publicidad.</li>
+<li><strong>Transferencia al extranjero</strong>: destinatarios Google LLC (Estados Unidos) y Google Ireland Limited (Irlanda); datos: ID de publicidad, IP, interacciones, datos técnicos; cuándo y cómo: por Internet, cifrados, en cada solicitud de anuncio; finalidad y conservación: <a href="#es-6">§ 6</a>. <strong>Para negarte</strong>: elige «Solo anuncios limitados» y elimina el ID de publicidad, o compra Premium; el juego sigue siendo totalmente jugable.</li>
+<li>Destrucción: los datos del dispositivo se borran de forma inmediata y definitiva (<a href="#es-11">§ 11</a>); los correos se eliminan definitivamente al vencer su plazo.</li>
+<li>Responsable de privacidad: Pouglin (<a href="#es-1">§ 1</a>). Vías de recurso: <a href="https://www.pipc.go.kr">PIPC</a>, centro de denuncias de privacidad de KISA (<a href="https://privacy.kisa.or.kr">privacy.kisa.or.kr</a>, ☎ 118).</li>
+</ul>
+
+<h3>India (DPDP Act 2023)</h3>
+<p>Puedes solicitar un resumen de los datos tratados, su corrección o su supresión, retirar tu consentimiento con la misma facilidad con que lo diste, designar a una persona para ejercer tus derechos y presentarnos una reclamación (dirección del <a href="#es-1">§ 1</a>, respuesta en el plazo de 1 mes) antes de acudir al Data Protection Board of India.</p>
+
+<h3>Australia, Turquía y otros países</h3>
+<p>Australia (Privacy Act): acceso, corrección y reclamación ante nosotros y, después, ante la <a href="https://www.oaic.gov.au">OAIC</a>; destinatario en el extranjero: Google (Estados Unidos). Turquía (KVKK): derechos del artículo 11 (saber, acceder, corregir, suprimir, conocer los destinatarios en Turquía y en el extranjero, oponerse, indemnización); reclamaciones ante la <a href="https://www.kvkk.gov.tr">Autoridad de Protección de Datos Personales</a> (KVKK). En cualquier otro país, tienes los derechos que te reconozca tu legislación local, que se ejercen de la misma manera.</p>
+
+<h2 id="es-14">14. Edad</h2>
+<p>Abysse está destinado a personas <strong>de 13 años o más</strong>. No está dirigido a niños y no recopilamos a sabiendas ningún dato de niños menores de 13 años (incluido en virtud de la norma estadounidense COPPA). En algunos países la edad de consentimiento digital es más alta (hasta 16 años en la UE, 14 en Corea del Sur): por debajo de ella, elige «Solo anuncios limitados» o pide permiso a tus padres. Si crees que un niño nos ha escrito, contacta con nosotros: eliminaremos sus datos.</p>
+
+<h2 id="es-15">15. Cambios</h2>
+<p>Cualquier cambio se publicará en esta página con su fecha. Los cambios importantes (por ejemplo, la activación del guardado en línea o un nuevo socio publicitario) se anunciarán en el juego antes de que entren en vigor y, cuando sea necesario, se te volverá a pedir tu consentimiento.</p>
+
+<p class="note">Esta página es una traducción de la <a href="privacy.html" hreflang="en">versión inglesa</a>. En caso de discrepancia, prevalece la versión inglesa.</p>
+</main>
+</body>
+</html>
