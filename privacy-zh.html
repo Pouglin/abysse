@@ -99,12 +99,12 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 
 <main>
 <h1>隐私政策</h1>
-<p class="date"><strong>最后更新：2026年10月4日</strong></p>
+<p class="date"><strong>最后更新：2026年10月8日</strong></p>
 
 <div class="short">
 <p><strong>简要说明</strong></p>
 <ul>
-<li><strong>无需账号，没有服务器</strong>：您的游戏进度保存在您的设备上。除非您写信给我们，否则我们不会收到任何信息。</li>
+<li><strong>无需账号</strong>：你的进度保存在你的设备上。除非你联系我们，否则我们不会收到任何内容——只有一种例外：<strong>经你同意</strong>，匿名的游戏与崩溃统计会发送到 Google Firebase（<a href="#zh-3b">§ 3 bis</a>，可选，可随时在<em>设置 → 隐私</em>中更改）。</li>
 <li>免费版会展示 <strong>Google AdMob 广告</strong>。届时 Google 会处理技术数据（广告标识符、IP 地址、与广告的互动）。<strong>只有在您同意的情况下</strong>，广告才会进行个性化，且您可以随时改变主意（<em>设置 → 隐私</em>）。</li>
 <li><strong>购买</strong>通过 Google Play（或 App Store）完成：我们看不到任何支付数据。</li>
 <li>您可以<strong>自行清除全部数据</strong>（<a href="#zh-11">第 11 条</a>），并可通过电子邮件行使您的权利（<a href="#zh-12">第 12 条</a>和<a href="#zh-13">第 13 条</a>）。</li>
@@ -116,6 +116,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <li><a href="#zh-1">谁负责</a></li>
 <li><a href="#zh-2">您设备上的数据</a></li>
 <li><a href="#zh-3">广告（Google AdMob）</a></li>
+<li><a href="#zh-3b">匿名统计（Firebase）</a></li>
 <li><a href="#zh-4">应用内购买</a></li>
 <li><a href="#zh-5">联系我们、评价游戏</a></li>
 <li><a href="#zh-6">汇总表</a></li>
@@ -147,7 +148,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <li><strong>导出/导入</strong>：在<em>设置 → 数据</em>中，您可以将存档代码复制到剪贴板，并粘贴到其他地方。该代码包含档案的进度及其名称；它未经加密，只有在您自己粘贴或发送时才会离开您的设备。如果档案名称能识别出您的身份，请勿公开发布该代码。</li>
 <li><strong>设备备份</strong>：如果您的 Android 手机开启了 Google 备份，Android 可能会将游戏数据<strong>加密</strong>后复制到您的 Google 账号中，并在新设备上恢复。在 iPhone/iPad 上，如果开启了 iCloud 设备备份，游戏数据同样可能包含在内。这些副本由 Google 或 Apple 管理；我们无法访问。您可以在设备设置中将其关闭。</li>
 <li><strong>在线存档</strong>：与游戏账号（Google Play 游戏、Game Center）关联的存档功能正在准备中，但<strong>尚未启用</strong>。如果将来启用，本政策将事先更新。</li>
-<li>本游戏<strong>未包含任何属于我们的分析工具或崩溃报告工具</strong>。</li>
+<li>游戏与崩溃的<strong>匿名统计</strong>（Google Firebase）是<strong>可选的</strong>，在你同意之前保持关闭：参见 <a href="#zh-3b">§ 3 bis</a>。</li>
 </ul>
 
 <h2 id="zh-3">3. 广告（Google AdMob）</h2>
@@ -169,6 +170,19 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <p><strong>在 iPhone 和 iPad 上</strong>（iOS 版本即将推出）：只有在您通过 Apple 的“允许跟踪”提示（App Tracking Transparency，应用跟踪透明度）给予许可时，才会使用 <strong>IDFA</strong> 广告标识符。如果您拒绝，或日后关闭<em>设置 → 隐私与安全性 → 跟踪</em>，则无法访问 IDFA。Apple 还提供 <strong>SKAdNetwork</strong>，让广告主无需识别您的身份即可衡量广告效果。</p>
 <p><strong>用户画像。</strong>如果您接受个性化广告，Google 可能会根据您的活动建立兴趣画像，以选择广告。这种画像不会产生对您具有法律效力或类似重大影响的决定。我们自己不进行任何用户画像。</p>
 <p class="links">Google 的规则：<a href="https://policies.google.com/technologies/partner-sites">Google 如何使用数据</a> · <a href="https://policies.google.com/privacy">Google 隐私权政策</a> · <a href="https://business.safety.google/adsservices/">Google Ads 数据保护条款</a></p>
+
+<h2 id="zh-3b">3 bis. 游戏与崩溃的匿名统计（Google Firebase）— 可选</h2>
+<p>为了了解游戏的使用情况、调整平衡并修复错误，Abysse 可以向 <strong>Google Firebase</strong>（Google 的服务 <em>Firebase Analytics</em> 与 <em>Firebase Crashlytics</em>）发送<strong>匿名统计</strong>。<strong>在你同意之前不会发送任何内容</strong>：游戏只询问一次（“帮助改进 Abysse？”），你可以随时在<em>设置 → 隐私 → 匿名游戏统计</em>中改变主意。拒绝不会让游戏失去任何内容。</p>
+<p><strong>如果你同意，会发送：</strong></p>
+<ul>
+<li><strong>游戏事件</strong>：应用的打开与关闭、会话时长；每局的深度、难度、结果、时长、达到的等级、击败的生物数、获得的珍珠以及失败原因；提供和选择的卡牌、结束时的武器与被动；在商店中<strong>用珍珠</strong>进行的购买和所选皮肤（物品标识与珍珠价格）；更改过的设置、新手引导步骤、成就；</li>
+<li><strong>技术信息</strong>：游戏版本、设备型号、Android 版本、语言、大致国家（由 IP 地址推断，Google 不会完整保存 IP 地址）、流畅度（每秒帧数）、错误；</li>
+<li><strong>崩溃报告</strong>（Crashlytics）：崩溃时的错误和应用状态；</li>
+<li>Firebase 的<strong>随机安装标识符</strong>，仅属于本次安装，与你的身份无关。此项统计<strong>不使用广告 ID</strong>，也不使用广告信号。</li>
+</ul>
+<p><strong>绝不会发送</strong>：你的姓名、档案名称、电子邮箱、精确位置、联系人、真实支付信息（它们只留在 Google Play）、存档内容。</p>
+<p><strong>目的。</strong>用于改进游戏：发现不平衡的武器或关卡，了解玩家在哪里放弃，修复崩溃和卡顿。我们既不将其用于广告，也不用它来识别你，更不会出售。Google Firebase 作为<strong>处理者</strong>，依照<a href="https://firebase.google.com/support/privacy">其条款</a>替我们处理这些数据。统计数据最长保存 <strong>14 个月</strong>。</p>
+<p><strong>由你掌控。</strong>关闭开关后，所有发送立即停止，安装标识符也会被重置。已发送的数据无法与你关联（随机标识符）：保存期结束后会自行消失。</p>
 
 <h2 id="zh-4">4. 应用内购买</h2>
 <p>两项自愿的一次性购买，由 <strong>Google Play Billing</strong>（在 iPhone/iPad 上则由 Apple 的 <strong>App Store</strong>）处理：</p>
@@ -192,6 +206,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <tbody>
 <tr><td data-label="数据">游戏进度、设置、档案名称、购买状态</td><td data-label="目的">使游戏正常运行</td><td data-label="法律依据">履行合同（提供您使用的游戏）；绝对必要的存储</td><td data-label="保存期限">直至您将其清除或卸载游戏</td><td data-label="接收方">无：保留在您的设备上</td></tr>
 <tr><td data-label="数据">设备备份副本</td><td data-label="目的">在新设备上恢复您的数据</td><td data-label="法律依据">您在设备设置中的选择（Google / Apple 的处理）</td><td data-label="保存期限">依 Google / Apple 规定</td><td data-label="接收方">Google（Android）或 Apple（iCloud）</td></tr>
+<tr><td data-label="数据">匿名游戏事件、技术信息、崩溃报告、随机安装标识符</td><td data-label="目的">了解使用情况、调整游戏平衡、修复错误</td><td data-label="法律依据">同意（“匿名游戏统计”开关）</td><td data-label="保存期限">最长 14 个月</td><td data-label="接收方">Google（Firebase），处理者</td></tr>
 <tr><td data-label="数据">广告标识符、IP 地址、互动、技术数据和诊断数据</td><td data-label="目的">个性化广告</td><td data-label="法律依据">同意</td><td data-label="保存期限">依 Google 规定（<a href="https://policies.google.com/technologies/retention">Google 的保留期限</a>）</td><td data-label="接收方">Google（AdMob）</td></tr>
 <tr><td data-label="数据">相同数据，但不建立广告画像</td><td data-label="目的">受限广告、衡量、频次控制、防范欺诈</td><td data-label="法律依据">正当利益（为免费游戏提供资金、广告安全）；在法律要求的地区（欧洲经济区、英国、瑞士），访问设备需征得同意</td><td data-label="保存期限">依 Google 规定</td><td data-label="接收方">Google（AdMob）</td></tr>
 <tr><td data-label="数据">购买（商品、状态、商店账号）</td><td data-label="目的">销售、解锁和恢复 Premium / 礼包</td><td data-label="法律依据">履行合同；Google / Apple 作为卖方的法定（会计、税务）义务</td><td data-label="保存期限">设备上的状态：直至卸载；商店处：依 Google / Apple 规定</td><td data-label="接收方">Google Play 或 Apple</td></tr>
@@ -203,6 +218,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <h2 id="zh-7">7. 法律依据及拒绝的后果</h2>
 <ul>
 <li><strong>同意</strong>：个性化广告，以及在欧洲经济区、英国和瑞士，根据“ePrivacy”（电子隐私）规则，为广告目的访问您的设备（读取或存储信息）。您可以<strong>随时撤回同意</strong>（<a href="#zh-3">第 3 条</a>），撤回与给予同意一样容易；撤回不影响此前已进行的处理。</li>
+<li><strong>同意（匿名统计）</strong>：游戏与崩溃的统计（<a href="#zh-3b">§ 3 bis</a>）只有在你同意后才会开始，并在你撤回后立即停止（<em>设置 → 隐私</em>）。</li>
 <li><strong>正当利益</strong>：非个性化或受限广告（为免费游戏提供资金）、广告衡量、频次控制和防范欺诈（Google 的处理）、回复您的电子邮件。您可以<strong>提出反对</strong>（<a href="#zh-12">第 12 条</a>）；购买 Premium 即可移除所有广告。</li>
 <li><strong>履行合同</strong>：运行游戏，提供和恢复您的购买。</li>
 <li><strong>法定义务</strong>：开具发票和销售会计由 Google 或 Apple 负责，它们代表我们销售游戏及应用内购买商品；我们不会为此目的收到任何玩家数据。</li>
@@ -212,6 +228,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <h2 id="zh-8">8. 保存期限</h2>
 <ul>
 <li><strong>您设备上的数据</strong>：直至您将其清除（<a href="#zh-11">第 11 条</a>）或卸载游戏。</li>
+<li><strong>匿名统计（Firebase）</strong>：最长 14 个月；你撤回同意后立即停止。</li>
 <li><strong>电子邮件</strong>：最后一次往来通信后 2 年，或应请求提前删除；仅在为确立或维护合法权利（争议）所必需时才会保存更久。</li>
 <li><strong>Google 或 Apple 处理的数据</strong>：依其各自规则（<a href="https://policies.google.com/technologies/retention">Google 的保留期限</a> · <a href="https://www.apple.com/legal/privacy/">Apple</a>）。</li>
 </ul>
@@ -219,6 +236,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <h2 id="zh-9">9. 接收方和跨境传输</h2>
 <ul>
 <li>我们不出售、不出租、也不共享任何数据。唯一的接收方是 <strong>Google</strong>（广告、支付、备份、电子邮件）以及在 iOS 上的 <strong>Apple</strong>（如上所述），以及在法律要求时的有关当局。</li>
+<li><strong>匿名统计</strong>（<a href="#zh-3b">§ 3 bis</a>）：由 <strong>Google Firebase</strong> 作为处理者替我们处理，适用与上文相同的传输保障。</li>
 <li>Google 和 Apple 可能会在<strong>欧洲经济区以外</strong>处理数据，尤其是在<strong>美国</strong>。这些传输依据<strong>欧盟–美国数据隐私框架</strong>（EU–U.S. Data Privacy Framework，及其英国和瑞士扩展），Google LLC 已加入该框架，并依据欧盟委员会的<strong>标准合同条款</strong>；Apple 采用其自身的保障措施，详见其<a href="https://www.apple.com/legal/privacy/">隐私政策</a>。广告 SDK 收集的数据会在请求或展示广告时通过互联网发送。</li>
 <li>更多信息：<a href="https://policies.google.com/privacy/frameworks">Google 的数据传输框架</a> · <a href="https://www.dataprivacyframework.gov/">dataprivacyframework.gov</a>。美国没有一般性的联邦数据保护法；保护依赖于上述承诺以及各州法律。</li>
 </ul>
@@ -226,6 +244,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <h2 id="zh-10">10. 安全</h2>
 <ul>
 <li>我们没有自己的服务器：在我们这一方<strong>不存在可能泄露的玩家数据库</strong>。</li>
+<li>匿名统计（<a href="#zh-3b">§ 3 bis</a>）托管在 Google Firebase，不含姓名或电子邮箱，访问权限仅限我们的账号。</li>
 <li>游戏数据位于应用的私有存储空间中，其他应用无法访问（经过改动的设备除外）。</li>
 <li>广告 SDK 和购买与 Google 或 Apple 之间的通信在<strong>传输过程中加密</strong>（HTTPS）；设备备份由 Android 或 iOS 加密。</li>
 <li>我们的邮箱受强身份验证保护。如果发生涉及您的数据泄露，我们将在法定期限内通知主管机构，并在必要时通知相关人员。</li>
@@ -237,6 +256,7 @@ caption{text-align:left;color:var(--muted);padding-bottom:.4rem}
 <li><strong>单个档案</strong>：<em>设置 → 数据 → 清除此档案</em>（立即生效，不可恢复）。</li>
 <li><strong>整个游戏</strong>：卸载 Abysse，或在 Android 上前往<em>设置 → 应用 → Abysse → 存储 → 清除数据</em>。</li>
 <li><strong>备份副本</strong>：Android，<em>设置 → Google → 备份</em>（管理或删除备份）；iPhone/iPad，<em>设置 → [您的姓名] → iCloud → 管理储存空间</em>。</li>
+<li><strong>匿名统计</strong>：<em>设置 → 隐私 → 匿名游戏统计</em>（关闭）。我们无法在 Firebase 中找到你的数据（随机标识符，不含姓名）；最长 14 个月后消失。</li>
 <li><strong>Google 处的广告数据</strong>：在设备设置中删除或重置广告 ID，并在 <a href="https://myadcenter.google.com">myadcenter.google.com</a> 和 <a href="https://myaccount.google.com/data-and-privacy">myaccount.google.com</a> 管理您的 Google 数据。我们无法将这些数据与您关联：由 Google 处理最为合适。</li>
 <li><strong>您的电子邮件</strong>：请写信至<a href="#zh-1">第 1 条</a>中的地址；我们将在 1 个月内删除双方的往来通信，并向您确认。</li>
 </ul>
